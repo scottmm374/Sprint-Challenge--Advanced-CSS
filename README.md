@@ -34,13 +34,24 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+    * *Answer:*  Responsive design responds tto the size of the browser at any given point while an adapative deisgn only responds at certain breaking points which makes an adaptive design much less fluid then a responsive deisgn. Responsive you do not see obvious changes, while adaptive the changes are more abrupt. 
+
 2. Describe what it means to be mobile first vs desktop first.
+
+    * *Answer:* Mobile first means that you are designing around a mobile size first and the incrementing larger to a desktop size.  you also use Min-width rather then max-width(used in desktop first)
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+    * *Answer:* It converts the default font-size of the browser (generally 16px) to 10PX to make conversions of px to rem much easier and divisible by 10.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+    * *Answer:* Its a great way to watch for errors in CSS file, as there are no current ways to do this, and CSS doesnt let you know when something is broken. So it saves time and headaches looking for bugs in your code. 
+    * It also allows you to break down css into managable files to allow for easier teamwork in creating a larger css file, and compiles your less files into a css file. 
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+    * *Answer:* I do love the error watching, makes it so much easier to see when you have a bug before it becomes a much larger issue. I don't know that I have an issue right now with understanding the concepts of a preprocessor, especially since so far it's use has been simple. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
