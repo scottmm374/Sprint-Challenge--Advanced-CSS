@@ -1,1 +1,28 @@
 // Mixins Here
+
+// Button Parametric Mixin
+
+.button(@width, @height, @bg-color, @font-color, @font-size) {
+    width: @width;
+    height: @height;
+    background: @bg-color;
+    color: @font-color;
+    font-size: @font-size;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+// Phone size mixin
+
+.phone-sizing () {
+    width: 90%;
+    margin: 0 3%;
+}
+
+.nav-footer() {
+    background: @footer-background;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
