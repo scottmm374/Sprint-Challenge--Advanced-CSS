@@ -163,10 +163,15 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    margin: 0 3%;
+  }
+}
 .main-nav {
   width: 100%;
   height: 90px;
-  position: fixed;
   background: #F6F6F6;
   display: flex;
   justify-content: center;
@@ -189,7 +194,7 @@ p {
   width: 65%;
   display: flex;
   justify-content: space-between;
-  margin: 5px 0 0 0;
+  margin: 8px 0 0 0;
   border: 1px solid red;
 }
 .main-nav .nav-container nav a {
@@ -198,14 +203,14 @@ p {
   text-decoration: none;
 }
 footer {
-  color: #22283B;
-  background: #f4f4f4;
-  padding: 20px 0;
-  border: 1px double #e0e0e0;
-  border-radius: 10px;
+  background: #F6F6F6;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #22283B;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -248,6 +253,21 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  width: 88px;
+  height: 31px;
+  background: #22283A;
+  color: #F1F1F1;
+  font-size: 15px;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 10px;
+  cursor: pointer;
+}
+.home .walk .walk-text .btn:hover {
+  background: #F1F1F1;
+  color: #22283A;
 }
 .home .walk .walk-img {
   width: 46%;

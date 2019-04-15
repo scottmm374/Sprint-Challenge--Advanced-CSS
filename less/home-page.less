@@ -4,6 +4,10 @@
 
   .intro {
 
+    // .header-img {
+    //   height: 100%;
+    // }
+
     h2 {
       padding: 15px;
     }
@@ -58,7 +62,15 @@
       }
 
       .btn {
+        .button(88px, 31px, @btn-bg-color, @sea-shell, 15px);
+
+        &:hover {
+          background: @sea-shell;
+          color: @btn-bg-color;
+        }
+        
       }
+
     }
 
     .walk-img {
