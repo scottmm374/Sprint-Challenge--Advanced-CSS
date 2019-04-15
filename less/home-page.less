@@ -1,22 +1,14 @@
 // Home Content
 
 .home {
-  border: 1px solid green;
-
 
   .intro {
-
-    @media @phone {
-      .phone-sizing();
-     }
+    max-width: 100%;
+    height: auto; 
 
     .header-img {
-      width: 100%;
-      border: 3px solid red;
-      @media @phone {
-        width: 50%;
-       }
-      
+     max-width: 100%;
+     height: auto;      
     }
 
 
@@ -28,15 +20,15 @@
       padding:0 15px;
     }
   
-  }
+  } // intro
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    border: 1px solid blue;
+    
       @media @phone {
-        width: 100%;
+        .phone-sizing();
         
       }
 
@@ -45,13 +37,12 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
-      border: 1px solid blue;
+      
 
         @media @phone {
           .phone-sizing();
-          
         }
-    }
+    } //img1
 
     .img2 {
       width: 28%;
@@ -63,12 +54,12 @@
         display: none;
         
       }
-    }
-  }
+    } // img2
+  } // space-images
 
   .visit-planets {
     padding: 15px;
-    border: 1px solid blue;
+    
 
     @media @phone {
       .phone-sizing();
@@ -82,7 +73,7 @@
     p {
       margin-top: 13px;
     }
-  }
+  } // visit-planets
 
   .walk {
     margin-top: 60px;
@@ -90,7 +81,7 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
-    border: 1px solid blue;
+    
 
     @media @phone {
       .phone-sizing();
@@ -99,6 +90,14 @@
 
     .walk-text {
       width: 50%;
+      
+
+      @media @phone {
+        .phone-sizing();
+        display: flex;
+        flex-direction: column;
+      }
+     // walk-text
 
       h3 {
         margin-bottom: 10px;
@@ -110,7 +109,7 @@
 
       .btn {
         .button(88px, 31px, @btn-bg-color, @sea-shell, 15px);
-        border: 1px solid blue;
+       
 
         @media @phone {
           .button(320px, 54px, @btn-bg-color, @sea-shell, 35px);
@@ -120,27 +119,33 @@
           background: @sea-shell;
           color: @btn-bg-color;
         }
+      }  
+
+     } // button
+
+
+      .walk-img {
+        width: 46%;
+        margin-left: 4%;
         
-      }
 
-    }
-
-    .walk-img {
-      width: 46%;
-      margin-left: 4%;
-      
-
-      @media @phone {
-        .phone-sizing;       
-      }
-  
+        @media @phone {
+          .phone-sizing(); 
+                 
+        }
+    
       img {
-        width: 100%;
+        max-width: 100%;
         height: auto;
         border-radius: 10px; 
-        border: 2px solid green; 
+        
+
+        // @media @phone {
+        //   .phone-sizing();       
+        // }
       }
 
-    }
-  }
+    } // walk-img
+  } // walk
+
 }// home
