@@ -3,6 +3,14 @@
 .home {
 
   .intro {
+    max-width: 100%;
+    height: auto; 
+    padding: 90px 0 0 0;
+  
+    .header-img {
+     max-width: 100%;
+     height: auto;      
+    }
 
     h2 {
       padding: 15px;
@@ -12,23 +20,46 @@
       padding:0 15px;
     }
   
-  }
+  } // intro
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    
+    @media @phone {
+      .phone-sizing(); 
+    }
 
-    img {
+    .img1 {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
-    }
-  }
+      
+      @media @phone {
+        .phone-sizing();
+      }
+    } //img1
+
+    .img2 {
+      width: 28%;
+      margin: 20px 2.5%;
+      border-radius: 20px;
+      height: 100%;
+
+      @media @phone {
+        display: none; 
+      }
+    } // img2
+  } // space-images
 
   .visit-planets {
     padding: 15px;
+    
+    @media @phone {
+      .phone-sizing();   
+    }
 
     h3 {
       margin-top: 11px;
@@ -37,17 +68,33 @@
     p {
       margin-top: 13px;
     }
-  }
+  } // visit-planets
 
   .walk {
+    width: 100%;
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    
+
+    @media @phone {
+      .phone-sizing();
+      padding: 0 1%;
+      flex-direction: column-reverse;
+    }
 
     .walk-text {
       width: 50%;
+      
+
+      @media @phone {
+        .phone-sizing();
+        display: flex;
+        flex-direction: column;
+      }
+     
 
       h3 {
         margin-bottom: 10px;
@@ -58,18 +105,46 @@
       }
 
       .btn {
-      }
-    }
+        .button(88px, 31px, @btn-bg-color, @sea-shell, 15px);
+       
 
-    .walk-img {
-      width: 46%;
-      margin-left: 4%;
-      
-      img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
+        @media @phone {
+          .button(100%, 54px, @btn-bg-color, @sea-shell, 15px);
+          padding-top: 18px;
+        }
+
+        &:hover {
+          background: @sea-shell;
+          color: @btn-bg-color;
+        }
+      }  // btn
+
+     }// walk-text
+
+
+      .walk-img {
+        width: 46%;
+        margin-left: 4%;
+        
+
+        @media @phone {
+        width: 100%; 
+        margin: auto;
+        padding-top: 10px;
+        display: flex;                
       }
-    }
-  }
+    
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px; 
+        
+
+        @media @phone {
+          .phone-sizing(); 
+          justify-content: center;      
+        }
+      }
+    } // walk-img
+  } // walk
 }// home
